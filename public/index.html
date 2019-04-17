@@ -15,6 +15,33 @@
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="text/javascript">
+        //trong Reactjs các biến không thể khai báo global được, mà phải khai báo cục bộ
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            scrollNavbar();
+            scrollTop()
+        }
+
+        function scrollNavbar() {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("scroll-navbar").style.top = "0";
+            } else {
+                document.getElementById("scroll-navbar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+
+        function scrollTop() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                document.getElementById('gototop').style.display = "block";
+            } else {
+                document.getElementById('gototop').style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>

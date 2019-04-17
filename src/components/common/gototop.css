@@ -1,0 +1,8 @@
+#gototop{
+    position: fixed;
+    bottom: 60px;
+    right: 25px;
+    display: none;
+    transition: all 1s;
+    font-size: 0.85rem;
+}
