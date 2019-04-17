@@ -1,0 +1,286 @@
+/*home css*/
+/* categories list */
+.h-categories-info {
+    background: url('../../images/background-1.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.categories-title {
+    text-align: center;
+    background: #1507044f;
+    box-shadow: 0 0 20px -3px black;
+}
+
+.categories-title h1 {
+    color: #ffdec3;
+}
+
+.h-categories-list {
+    justify-content: center;
+}
+
+.h-categories-img {
+    width: 300px;
+    height: 400px;
+    transition: all 0.7s;
+}
+
+.h-categories-product .nc-1 {
+    /* transform: scale(3) translate(13%, 30%); */
+}
+
+.h-categories-product img {
+    width: 100%;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+.h-categories-product:hover img {
+    transform: scale(1.5) rotate(20deg);
+}
+
+.h-categories-img {
+    position: relative;
+}
+
+.h-categories-img a {
+    color: #fff;
+}
+
+.h-details {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.h-details h2 {
+    padding: 10px;
+    font-weight: 100;
+    font-size: 0.8rem;
+    border: 1px solid #ffffff;
+    background: #410801db;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.h-details h2:hover {
+    opacity: .7;
+}
+
+/* card list */
+.h-card-list {
+    justify-content: space-between;
+}
+
+.product img {
+    transform: scale(1.3);
+}
+
+.h-card-img {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    margin: 0 0 1rem 1rem;
+    transition: all 1s;
+    overflow: hidden;
+    border-radius: 25% 0;
+}
+
+.h-card-img a img {
+    width: 100%;
+}
+
+.h-card-img:hover .h-card-details {
+    top: 0%;
+}
+
+.h-card-img::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -700px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background: linear-gradient(0deg, #410702ad 10%, #00050ad1 80%);
+    z-index: 1;
+}
+
+.h-card-img:hover::before {
+    bottom: 0px;
+}
+
+.h-card-details {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0px 5px;
+    color: #fff;
+    transition: 0.5s cubic-bezier(0.54, -0.36, 0.43, 1.46);
+    transition-delay: 0.2s;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.h-categories-product {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* product list */
+.h-product-list {
+    background: #00050a;
+}
+
+.h-product-list-title {
+    background: #01080e;
+    box-shadow: 0 0 20px -3px black;
+}
+
+.h-product-list-title h2 {}
+
+.product-description {
+    font-size: 0.85em;
+}
+
+.photographer {
+    font-size: 0.8em;
+}
+
+.photographer {
+    width: 30px;
+}
+
+/* about me */
+.h-about-me {
+    background: url('../../images/about-me.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 15%;
+}
+
+.h-main-about-me {
+    background: linear-gradient(to right, transparent, #00050a);
+}
+
+.h-about-info {
+    width: 50%;
+    transition: all 0.5s;
+}
+
+.h-block-about-me {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.h-about-info-hidden {
+    /* display: block; */
+    width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .h-categories-img {
+        width: 250px;
+        height: 350px;
+    }
+
+    .h-card-img {
+        width: 250px;
+        height: 350px;
+        margin: 0 0 1rem 1rem;
+    }
+
+    .h-card-list {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .h-categories-img {
+        width: 200px;
+        height: 300px;
+        margin: 0 0.5rem 1rem 0.5rem;
+    }
+
+    .h-card-img {
+        width: 200px;
+        height: 300px;
+        margin: 0 0.5rem 1rem 0.5rem;
+    }
+
+    .h-about-info {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .h-categories-img {
+        width: 150px;
+        height: 220px;
+        margin: 0 0.5rem 1rem 0.5rem;
+    }
+
+    .h-card-img {
+        width: 270px;
+        height: 370px;
+        margin: 0 0 1rem 1rem;
+    }
+
+    .categories-title h1 {
+        line-height: 23px;
+        font-size: 0.85rem;
+    }
+
+    .h-product-list-title h2 {
+        line-height: 23px;
+        font-size: 0.85rem;
+    }
+
+    .h-details h2 {
+        padding: 5px;
+    }
+
+    main {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .h-categories-img {
+        width: 100%;
+        height: 100%;
+        margin: 0 0.5rem 1rem 0.5rem;
+    }
+
+    .h-card-img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0 0 1rem 0;
+    }
+
+    .h-about-info-hidden {
+        display: none;
+    }
+
+    .h-block-about-me {
+        flex-flow: column nowrap;
+    }
+
+    .h-details h2 {
+        padding: 10px;
+    }
+}

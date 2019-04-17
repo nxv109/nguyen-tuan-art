@@ -1,0 +1,31 @@
+.h-main-footer {
+    background: #01090e;
+    color: #3c4144;
+}
+
+.h-footer-contact {
+    line-height: 23px;
+}
+
+.h-footer {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.h-footer div div a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 23px;
+}
+
+@media screen and (max-width: 768px) {
+    .h-footer {
+        flex-flow: column;
+        padding: 5px;
+    }
+
+    .h-footer div {
+        margin-bottom: 1rem;
+    }
+}

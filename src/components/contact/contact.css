@@ -1,0 +1,48 @@
+.address-info{
+    justify-content: space-around;
+    font-size: 3rem;
+    transition: all 0.5s;
+}
+@media screen and (max-width: 992px){
+    .address-info{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .address-info{
+        flex-flow: column !important;
+        font-size: 2rem;
+    }
+    .address-info div{
+        margin-bottom: 1rem;
+    }
+    .input-contact{
+        width: 100% !important;
+    }
+}
+
+/* box info */
+.box-info{
+    width: 100%;
+}
+
+.box-input-contact{
+    justify-content: space-between;
+}
+
+input, textarea{
+    border: none;
+    outline: none;
+    padding: 17px 5px;
+    background: #001021;
+    color: inherit;
+}
+.input-contact{
+    width: 46%;
+    margin-bottom: 2rem;
+    transition: all 0.5s;
+}
+.textarea-contact{
+    width: 100%;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,121 @@
+.main-navbar {
+    background: #00050a;
+    /* color: #fff; */
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0px;
+    background: #00050a;
+    color: #fff;
+}
+
+.categories-menu {
+    position: relative;
+}
+
+.icon-nav {
+    display: none;
+}
+
+.right-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 0;
+    transition: all 0.7s;
+}
+
+.categories-button-menu {
+    cursor: pointer;
+}
+
+.categories-items-menu {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    padding: 5px 10px;
+    background: #410702;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.open-right-nav {
+    width: 100%;
+    height: 0;
+}
+.logo-tuan{
+    width: 150px;
+}
+.logo-tuan img{
+    width: 100%;
+}
+
+/* response menu */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: fixed;
+        flex-flow: column nowrap;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        padding: 5px 1rem;
+        background: #00050a;
+        color: #fff;
+    }
+
+    .logo-tuan{
+        width: 100px;
+    }
+
+    .icon-nav {
+        font-size: 1.3rem !important;
+        display: block;
+        cursor: pointer;
+    }
+
+    .text-decoration {
+        margin: 0;
+        padding: 0;
+    }
+
+    .categories-menu {
+        margin: 0;
+    }
+
+    .left-nav {
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .open-right-nav {
+        display: flex !important;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .right-nav {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .right-nav div:not(:last-child) {
+        margin-bottom: 1em;
+    }
+
+    .categories-items-menu {
+        background: #410702;
+    }
+}

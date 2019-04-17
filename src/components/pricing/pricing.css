@@ -1,0 +1,14 @@
+.pricing-list .pricing-table{
+    width: 100%;
+    /* color: red; */
+}
+.pricing-list .pricing-table thead th{
+    border-bottom: 1px solid;
+    padding: 20px 0px;
+    background: #003150;
+}
+.pricing-table tbody tr td{
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+}
