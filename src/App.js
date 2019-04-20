@@ -11,29 +11,33 @@ import Place from './components/place/place';
 import Pricing from './components/pricing/pricing';
 import Error from './components/Error';
 import Navigation from './components/common/Navigation';
+import Gallery from './components/gallery/Gallery';
 import Footer from './components/common/Footer';
+import GotoTop from './components/common/GotoTop';
 
 import './App.css';
 
 class App extends Component {
-    render() {
-        return (
-        <Router className="App">
-            <Navigation/>
-            <Switch>
-                <Route path="/" component={Home} exact="exact"/>
-                <Route path="/categories/engagement" component={Engagement}/>
-                <Route path="/categories/couple" component={Couple}/>
-                <Route path="/categories/portrait" component={Portrait}/>
-                <Route path="/place" component={Place}/>
-                <Route path="/pricing" component={Pricing}/>
-                <Route path="/about" component={About}/>
-                <Route path="/contact" component={Contact}/>
-                <Route component={Error}/>
-            </Switch>
-            <Footer/>
-        </Router>);
-    }
+	render() {
+		return (
+			<Router className="App">
+				<Navigation/>
+				<Switch>
+					<Route path="/" component={Home} exact="exact"/>
+					<Route path="/categories/engagement" component={Engagement}/>
+					<Route path="/categories/couple" component={Couple}/>
+					<Route path="/categories/portrait" component={Portrait}/>
+					<Route path="/place" component={Place}/>
+					<Route path="/pricing" component={Pricing}/>
+					<Route path="/about" component={About}/>
+					<Route path="/contact" component={Contact}/>
+					<Route path="/gallery" component={Gallery}/>
+					<Route component={Error}/>
+				</Switch>
+				<Footer/>
+				<GotoTop/>
+			</Router>);
+	}
 }
 
 export default App;

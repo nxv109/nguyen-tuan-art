@@ -33,7 +33,7 @@ class Navigation extends React.Component{
    render(){
 	  const { categories, navbarResponse } = this.state;
 	  return(
-		 <header className="main-navbar box-shadow">
+		 <header id="scroll-navbar" className="main-navbar box-shadow">
 			<nav className="container navbar">
 			   <div className="left-nav">
 				  <NavLink onClick={this.clickLink} className=" text-default text-decoration" to="/">
@@ -43,19 +43,19 @@ class Navigation extends React.Component{
 			   </div>
 			   <div className={navbarResponse ? "open-right-nav right-nav" : "right-nav"}>
 				  <div className="mr-3 categories-menu">
-					 <a href="#0" className="text-decoration  text-default categories-button-menu" onClick={this.onHandlerCategories}>Categories</a>
+					 <a href="#0" className="text-decoration  text-default categories-button-menu" onClick={this.onHandlerCategories}>Chuyên mục</a>
 					 <div style={{display: categories ? 'block' : 'none'}}>
-						<div className="categories-items-menu box-shadow">
-						   <NavLink onClick={this.clickLink} className="text-default text-decoration p-05" to="/categories/engagement">Engagement</NavLink>
-						   <NavLink onClick={this.clickLink} className="text-default text-decoration p-05" to="/categories/couple">Couple</NavLink>
-						   <NavLink onClick={this.clickLink} className="text-default text-decoration p-05" to="/categories/portrait">Portrait</NavLink>
+						<div className="categories-items-menu font-s-s box-shadow">
+						   <NavLink onClick={this.clickLink} className="text-default text-decoration p-05" to="/categories/engagement">Ngoại cảnh</NavLink>
+						   <NavLink onClick={this.clickLink} className="text-default text-decoration p-05" to="/categories/couple">Cặp đôi</NavLink>
+						   <NavLink onClick={this.clickLink} className="text-default text-decoration p-05" to="/categories/portrait">Chân dung</NavLink>
 						</div>
 					 </div>
 				  </div>
-				  <div className=""><NavLink onClick={this.clickLink} className="mr-3  text-default text-decoration" to="/place">Place</NavLink></div>
-				  <div className=""><NavLink onClick={this.clickLink} className="mr-3  text-default text-decoration" to="/pricing">Pricing</NavLink></div>
-				  <div className=""><NavLink onClick={this.clickLink} className="mr-3  text-default text-decoration" to="/about">About me</NavLink></div>
-				  <div className=""><NavLink onClick={this.clickLink} className=" text-default text-decoration" to="/contact">Contact</NavLink></div>
+				  <div className=""><NavLink onClick={this.clickLink} className="mr-3  text-default text-decoration" to="/place">Địa điểm</NavLink></div>
+				  <div className=""><NavLink onClick={this.clickLink} className="mr-3  text-default text-decoration" to="/pricing">Bảng giá</NavLink></div>
+				  <div className=""><NavLink onClick={this.clickLink} className="mr-3  text-default text-decoration" to="/about">Thông tin</NavLink></div>
+				  <div className=""><NavLink onClick={this.clickLink} className=" text-default text-decoration" to="/contact">Liên hệ</NavLink></div>
 			   </div>
 			</nav>
 		 </header>

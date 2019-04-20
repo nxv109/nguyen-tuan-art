@@ -1,12 +1,10 @@
 {
-  "name": "router",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nxv109.github.io/nguyen-tuan-art",
   "dependencies": {
-    "gh-pages": "^2.0.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
@@ -14,8 +12,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-	"predeploy": "npm run build",
-	"deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
